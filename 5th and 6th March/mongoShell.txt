@@ -1,0 +1,17 @@
+show dbs
+
+use dbName
+
+db.createCollection('collectionName')
+
+show collections
+
+db.collectionName.insertOne({key:'value', key2:'value2'})
+
+db.collectionName.insertMany([{key:'value', key2:'value2'},{key:'value', key2:'value2'},{key:'value', key2:'value2'}])
+
+db.collectionName.updateOne({key:'value'}, {$set:{newkey:'newValue'}})
+
+db.collectionName.deleteOne({key:'value'})
+
+db.collectionName.deleteMany({key:'value'})
