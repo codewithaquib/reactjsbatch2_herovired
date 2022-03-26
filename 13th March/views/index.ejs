@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the library!</title>
+</head>
+<body>
+    <h1>User type : <%= userType %></h1>
+    
+    <%
+        if(userType=='free')
+        { %>
+            <h1>This is for free users</h1>
+        <% }
+        else
+        { %>
+            <h1>This is for paid users</h1>
+        <% }
+    %>
+
+    <%
+        for(var i=0; i<books.length; i++)
+        { %>
+            <h3>Title : <%= books[i].title %> </h3>
+            <h3>ID : <%= books[i].id %> </h3>
+        <% }
+    %>
+
+</body>
+</html>
